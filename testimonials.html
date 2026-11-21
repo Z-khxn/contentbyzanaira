@@ -43,6 +43,12 @@
 <style>
   /* English headings never break a word: Safari ignores the kit's 10-letter hyphenation limit */
   h1, h2, h3, h4 { hyphens: manual; -webkit-hyphens: manual; }
+  /* phones: each section is as tall as its content, with even space around it (no screen-filling gaps) */
+  @media (max-width: 639px) {
+    main > :is(section, .section):not(.hero), footer.closing { min-height: 0 !important; --padt: 64px; --padb: 64px; }
+    main > :is(section, .section):not(.hero) { --bar: 0px; }
+    main > :is(section, .section) > .wrap > .fill { flex: none; }
+  }
   .nav__logo img.logo-word { height: 18px; }
   .footer__brand { display: flex; align-items: center; gap: var(--s-5); }
   .footer__brand .logo-mono { height: 96px; width: auto; }
