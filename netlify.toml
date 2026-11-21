@@ -1,0 +1,10 @@
+# Plain static site: no build step, publish the repo root as it is.
+[build]
+  publish = "."
+  command = ""
+
+# Photos, logo cuts and kit files change rarely: let browsers keep them for a week.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
