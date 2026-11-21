@@ -133,9 +133,9 @@
           <h2 id="leave-h">Send a review</h2>
           <p>Booked a shoot? A few lines about how it went help the next couple or business decide. I add new reviews to this page.</p>
         </div>
-        <form class="form span-6 start-7" action="https://formsubmit.co/zanaira.hansari@gmail.com" method="post" data-endpoint="https://formsubmit.co/ajax/zanaira.hansari@gmail.com" data-sent="Your review is in. Thank you for writing it." novalidate>
-          <input type="hidden" name="_subject" value="New review from the website">
-          <input type="hidden" name="_template" value="table">
+        <form name="review" class="form span-6 start-7" action="/" method="post" data-netlify="true" netlify-honeypot="bot-field" data-endpoint="/" data-sent="Your review is in. Thank you for writing it." novalidate>
+          <input type="hidden" name="form-name" value="review">
+          <p hidden><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <div class="field"><label for="r-name">First name</label>
             <input id="r-name" name="name" type="text" autocomplete="given-name" required aria-describedby="r-name-err">
             <p class="field__error" id="r-name-err" hidden>Write the first name to show with your review.</p></div>

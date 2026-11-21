@@ -202,9 +202,9 @@
             <li><span class="rows__name">Travel</span><p>Travel fees may apply.</p></li>
           </ul>
         </div>
-        <form class="form span-6 start-7" action="https://formsubmit.co/zanaira.hansari@gmail.com" method="post" data-endpoint="https://formsubmit.co/ajax/zanaira.hansari@gmail.com" data-sent="Your shoot request is in. I’ll email you to confirm the date." novalidate>
-          <input type="hidden" name="_subject" value="New shoot request from the website">
-          <input type="hidden" name="_template" value="table">
+        <form name="booking" class="form span-6 start-7" action="/" method="post" data-netlify="true" netlify-honeypot="bot-field" data-endpoint="/" data-sent="Your shoot request is in. I’ll email you to confirm the date." novalidate>
+          <input type="hidden" name="form-name" value="booking">
+          <p hidden><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <div class="field"><label for="f-name">Name</label>
             <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
             <p class="field__error" id="f-name-err" hidden>Write the name the booking is under.</p></div>
