@@ -52,6 +52,8 @@
     main > :is(section, .section):not(.hero), footer.closing { min-height: 0 !important; --padt: 64px; --padb: 64px; }
     main > :is(section, .section):not(.hero) { --bar: 0px; }
     main > :is(section, .section) > .wrap > .fill { flex: none; }
+    /* the kit makes footer links 44px flex targets on a phone but only centres them vertically */
+    .footer .footer__legal .socials a { justify-content: center; }
   }
   .nav__logo img.logo-word { height: 18px; }
   .footer__brand { display: flex; align-items: center; gap: var(--s-5); }
