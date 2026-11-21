@@ -1,0 +1,17 @@
+# local build tooling: Node, Chrome profiles, check reports, downloads
+.taste-skill/
+.claude/
+.DS_Store
+
+# Taste kit demo and stock files the site never loads
+assets/photos/
+assets/objects/
+assets/scenes/
+assets/layout/img/
+assets/moments/_demo/
+
+# the icon library: the page draws its two marks inline and needs only icon.css
+assets/icons/*
+!assets/icons/icon.css
+!assets/icons/instagram.svg
+!assets/icons/tiktok.svg

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en-GB" data-type="service" data-radius="soft" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ContentByZanaira: TikTok and Reels videographer in Bedford</title>
+<meta name="description" content="Short-form videos for weddings, events and businesses around Bedford, filmed on location and edited on mobile in 4K. Packages from £70.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ContentByZanaira: TikTok and Reels videographer in Bedford">
+<meta property="og:description" content="Wedding, event and brand reels, edited in 4K and sent back within 12 to 36 hours.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/brand/mono-ink.png" type="image/png">
+<meta name="theme-color" content="#f6f1ec">
+<!-- <link rel="canonical" href="https://[the client's domain]/"> -->
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..700&family=Libre+Franklin:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #f6f1ec; --p-surface: #ebe1d8; --p-ink: #16120f; --p-muted: #6b5d52;
+  --p-accent: #16120f; --p-accent-ink: #f6f1ec; --p-action: #16120f; --p-action-ink: #f6f1ec;
+  --p-inv-bg: #16120f; --p-inv-surface: #231e1b; --p-inv-ink: #f6f1ec; --p-inv-muted: #98938f;
+  --p-inv-accent: #f6f1ec; --p-inv-accent-ink: #16120f; --p-inv-action: #f6f1ec; --p-inv-action-ink: #16120f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-text: "Libre Franklin", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.02em;
+  --display-tracking-xl: -0.026em;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<!-- page CSS: the client's logo files in the bar and the footer -->
+<style>
+  /* English headings never break a word: Safari ignores the kit's 10-letter hyphenation limit */
+  h1, h2, h3, h4 { hyphens: manual; -webkit-hyphens: manual; }
+  .nav__logo img.logo-word { height: 18px; }
+  .footer__brand { display: flex; align-items: center; gap: var(--s-5); }
+  .footer__brand .logo-mono { height: 96px; width: auto; }
+  .footer__brand .logo-word { height: 14px; width: auto; }
+  @media (max-width: 639px) {
+    .nav__logo img.logo-word { height: 12px; }
+    .footer__brand .logo-mono { height: 64px; }
+    .footer__brand .logo-word { height: 10px; }
+  }
+  /* the two work photographs stay side by side as portraits below the desktop, so the section keeps one screen */
+  @media (max-width: 1023px) {
+    #work .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    #work .grid > .frame { grid-column: auto; --ratio: 125% !important; }
+  }
+  @media (min-width: 640px) and (max-width: 1023px) { #work .grid > .frame { --ratio: 175% !important; } }
+  @media (max-width: 639px) { #work .grid > .frame { --ratio: 175% !important; } }
+  /* on a phone the packages section runs two screens: the rows, then the photograph at 4:5 */
+  @media (max-width: 639px) { #packages .grid.fill > .frame--fill { flex: none; height: auto; aspect-ratio: 4 / 5; } }
+  /* the message box takes the room the desktop leaves beside the booking terms */
+  @media (min-width: 1024px) { #book textarea { min-height: 200px; } }
+  /* the booking terms go two-up on the tablet, so the form and the terms fit one screen there */
+  @media (min-width: 640px) and (max-width: 1023px) {
+    #book .rows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-5); }
+  }
+</style>
+</head>
+<body>
+<!-- type: service (short-form video content creator, Bedford)
+     deal: hero split (film dealt first, re-dealt: no film and only portrait photographs), nav nav-split,
+     close close-word head row without the name (close-photo re-dealt: all four client photographs are used above),
+     footer footer-dark, rhythm dark-band (#work), buttons solid, mark ring (replaced by the client's logo)
+     palette: the client's own logo colours via start.mjs brand (black and champagne), type source-serif (red-hat skipped:
+     a grotesk clashes with the serif logo; literata failed hero-lines)
+     moments: word-highlight in #process -->
+
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top"><img class="logo-word" src="assets/brand/word-ink.png" alt="ContentByZanaira" width="778" height="45"></a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="#packages">Packages <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <a class="menu-card span-4" href="#packages">
+              <div class="panel"><img class="frame__img" src="assets/work/event-guests-640.webp" width="640" height="1137" alt="Guests in traditional dress at an outdoor event" loading="lazy" data-source="client" data-subject="event guests"></div>
+              <span class="t-card">Bronze, £70</span>
+              <span class="t-small muted">2 hours, 2 edited reels</span>
+            </a>
+            <a class="menu-card span-4" href="#packages">
+              <div class="panel"><img class="frame__img" src="assets/work/mehndi-decor-640.webp" width="640" height="853" alt="A dhol drum on a patterned rug in front of a bright mehndi backdrop" loading="lazy" data-source="client" data-subject="mehndi decor"></div>
+              <span class="t-card">Silver, £125</span>
+              <span class="t-small muted">3 hours, 3 edited reels</span>
+            </a>
+            <a class="menu-card span-4" href="#packages">
+              <div class="panel"><img class="frame__img" src="assets/work/dessert-table-640.webp" width="640" height="853" alt="A dessert table with cupcakes and flowers under red drapes" loading="lazy" data-source="client" data-subject="dessert table"></div>
+              <span class="t-card">Gold, £175</span>
+              <span class="t-small muted">5 hours, 5 edited reels</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#work">Work</a></div>
+      <div class="nav__item"><a class="nav__link" href="testimonials.html">Reviews</a></div>
+      <div class="nav__item"><a class="nav__link" href="#book">Booking</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#book">Book a shoot</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-5">
+        <p class="hero__kicker">Based in Bedford, Bedfordshire</p>
+        <h1 id="hero-h">Short-form video for weddings and businesses</h1>
+        <p class="hero__lead">I film your wedding, event or brand on location, edit on mobile and send back TikToks and Instagram Reels in 4K. Packages from £70.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="#book">Book a shoot<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="#packages">See packages</a></div>
+      </div>
+      <div class="hero__media span-6 start-7">
+        <img src="assets/work/wedding-couple-1200.webp" srcset="assets/work/wedding-couple-640.webp 640w, assets/work/wedding-couple-1200.webp 1200w" sizes="(max-width: 639px) calc(100vw - 48px), 628px" width="1200" height="1600" alt="A bride and groom on their wedding stage, the bride in a lilac embroidered outfit" style="--ly-pos: 50% 55%" fetchpriority="high" data-source="client" data-subject="wedding couple">
+        <div class="ly-float">
+          <div class="ly-float__row"><span>Delivery</span><span>4K</span></div>
+          <div class="ly-float__title">Edited reels within 12 to 36 hours</div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="packages" style="--hm: 2" aria-labelledby="packages-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 split-col">
+          <div class="section-head">
+            <h2 id="packages-h">Packages and prices</h2>
+            <p>Edited for TikTok and Reels, sent in 4K.</p>
+          </div>
+          <ul class="rows">
+            <li><span class="rows__name">Bronze</span><p>2 hours of filming, 2 reels in 12 to 24 hours</p><span class="rows__value">£70</span></li>
+            <li><span class="rows__name">Silver</span><p>3 hours of filming, 3 reels in 12 to 24 hours</p><span class="rows__value">£125</span></li>
+            <li><span class="rows__name">Gold</span><p>5 hours of filming, 5 reels in 12 to 36 hours</p><span class="rows__value">£175</span></li>
+          </ul>
+          <p class="split-col__end"><a class="link" href="#book">Book a package</a></p>
+        </div>
+        <div class="frame frame--photo frame--fill span-6 start-7">
+          <img class="frame__img" src="assets/work/event-guests-878.webp" srcset="assets/work/event-guests-640.webp 640w, assets/work/event-guests-878.webp 878w" sizes="(max-width: 639px) calc(100vw - 48px), 628px" width="878" height="1560" alt="Guests in traditional dress at an outdoor event, a hedge behind them" style="object-position: 15% 40%" loading="lazy" data-source="client" data-subject="event guests">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section statement" id="process" data-moment="word-highlight" aria-label="How I work">
+    <div class="wrap">
+      <p class="t-label">How I work</p>
+      <p class="mo-wh__text">I handle every step myself, from filming on location to editing the final cut on mobile, so your videos feel <strong>natural and current</strong> on TikTok and Instagram.</p>
+    </div>
+  </section>
+
+  <section class="section ground-inverse" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="work-h">Recent weddings and events</h2>
+        <p>A mehndi night and a dessert table from recent shoots. The finished reels are on Instagram and TikTok.</p>
+      </div>
+      <div class="grid">
+        <div class="frame frame--photo span-6" style="--ratio: 80%">
+          <img class="frame__img" src="assets/work/mehndi-decor-1200.webp" srcset="assets/work/mehndi-decor-640.webp 640w, assets/work/mehndi-decor-1200.webp 1200w" sizes="(max-width: 1023px) 50vw, 628px" width="1200" height="1600" alt="A dhol drum on a patterned rug in front of a bright mehndi backdrop" loading="lazy" data-source="client" data-subject="mehndi decor">
+        </div>
+        <div class="frame frame--photo span-6" style="--ratio: 80%">
+          <img class="frame__img" src="assets/work/dessert-table-1200.webp" srcset="assets/work/dessert-table-640.webp 640w, assets/work/dessert-table-1200.webp 1200w" sizes="(max-width: 1023px) 50vw, 628px" width="1200" height="1600" alt="A dessert table with cupcakes and flowers under red drapes" style="object-position: 50% 60%" loading="lazy" data-source="client" data-subject="dessert table">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="book" style="--hm: 2" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="grid grid--top">
+        <div class="span-5 stack-4">
+          <div class="section-head">
+            <h2 id="book-h">Book a shoot</h2>
+            <p>Tell me the date, the venue and the package you want. I reply by email to confirm the date and the deposit.</p>
+          </div>
+          <ul class="rows">
+            <li><span class="rows__name">Notice</span><p>Book at least three weeks before the shoot.</p></li>
+            <li><span class="rows__name">Deposit</span><p>Half the price holds the date.</p></li>
+            <li><span class="rows__name">On the day</span><p>The rest is paid in cash or by bank transfer.</p></li>
+            <li><span class="rows__name">Travel</span><p>Travel fees may apply.</p></li>
+          </ul>
+        </div>
+        <form class="form span-6 start-7" action="https://formsubmit.co/zanaira.hansari@gmail.com" method="post" data-endpoint="https://formsubmit.co/ajax/zanaira.hansari@gmail.com" data-sent="Your shoot request is in. I’ll email you to confirm the date." novalidate>
+          <input type="hidden" name="_subject" value="New shoot request from the website">
+          <input type="hidden" name="_template" value="table">
+          <div class="field"><label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+            <p class="field__error" id="f-name-err" hidden>Write the name the booking is under.</p></div>
+          <div class="field"><label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+            <p class="field__error" id="f-email-err" hidden>Write an email address with an @, like name@example.com.</p></div>
+          <div class="field"><label for="f-date">Shoot date</label>
+            <input id="f-date" name="date" type="text" autocomplete="off" required aria-describedby="f-date-err">
+            <p class="field__error" id="f-date-err" hidden>Write the day of the shoot, at least three weeks from today.</p></div>
+          <div class="field"><label for="f-venue">Venue or town</label>
+            <input id="f-venue" name="venue" type="text" autocomplete="off" required aria-describedby="f-venue-err">
+            <p class="field__error" id="f-venue-err" hidden>Write where the shoot is, so I can check travel.</p></div>
+          <div class="field field--full"><label for="f-package">Package</label>
+            <select id="f-package" name="package">
+              <option>Not sure yet</option>
+              <option>Bronze, £70</option>
+              <option>Silver, £125</option>
+              <option>Gold, £175</option>
+            </select></div>
+          <div class="field field--full"><label for="f-about">What the shoot is for</label>
+            <textarea id="f-about" name="message" rows="3" required aria-describedby="f-about-err"></textarea>
+            <p class="field__error" id="f-about-err" hidden>Write a line about the event or business.</p></div>
+          <div class="btn-row"><button class="btn btn--primary" type="submit">Book a shoot</button></div>
+          <p class="form__status" role="status" data-form-status></p>
+          <p class="t-small muted">The date is yours once the deposit is paid.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--dark ground-inverse" id="contact" style="--hm: 2" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--word">
+      <div class="section-head--split">
+        <div><h2 id="close-h">Reels from your wedding, event or business</h2><p class="t-lead">Packages from £70, filmed around Bedford.</p></div>
+        <a class="btn btn--primary" href="#book">Book a shoot<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      </div>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo footer__brand" href="#top"><img class="logo-mono" src="assets/brand/mono-champagne.png" alt="" loading="lazy" width="307" height="350"><img class="logo-word" src="assets/brand/word-champagne.png" loading="lazy" alt="ContentByZanaira" width="778" height="45"></a>
+          <p class="footer__lede">Short-form video for weddings, events and businesses in Bedford, Bedfordshire.</p>
+        </div>
+        <div class="span-2 start-5 footer__col"><h3>Packages</h3><ul><li><a href="#packages">Bronze</a></li><li><a href="#packages">Silver</a></li><li><a href="#packages">Gold</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Studio</h3><ul><li><a href="#process">Process</a></li><li><a href="#work">Work</a></li><li><a href="testimonials.html">Reviews</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Booking</h3><ul><li><a href="#book">Booking terms</a></li><li><a href="https://vendifyevents.com/businesses/contentbyzanaira-1787228040939">Vendify listing</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Follow</h3><ul><li><a href="https://www.instagram.com/contentbyzanaira/">Instagram</a></li><li><a href="https://www.tiktok.com/@contentbyzanaira">TikTok</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 ContentByZanaira</span>
+        <div class="socials">
+          <a href="https://www.instagram.com/contentbyzanaira/" aria-label="ContentByZanaira on Instagram"><svg class="ic ic-svg ic-24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+          <a href="https://www.tiktok.com/@contentbyzanaira" aria-label="ContentByZanaira on TikTok"><svg class="ic ic-svg ic-24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="1.084 -0.481 21.823 25.033" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick actions">
+  <a class="btn btn--primary" href="#book">Book a shoot</a>
+</nav>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
